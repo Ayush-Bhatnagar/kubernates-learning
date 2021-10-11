@@ -18,3 +18,14 @@ kubectl delete replicaset <replicaset_name>
 
 # Describe individual pod
 kubectl describe pod <pod_name>
+
+# Deployment
+
+## Change image version in deployment
+kubectl set image deployment/helloworld-deployment k8s-demo=arjunachari12/k8s-demo:2
+
+## Rollout Deployment
+kubectl rollout status deployment/helloworld-deployment
+
+## Undo Deployment
+kubectl rollout undo deployment/helloworld-deployment

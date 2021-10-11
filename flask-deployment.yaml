@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-deployment
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: helloflask
+  template:
+    metadata:
+      labels:
+        app: helloflask
+    spec:
+      containers:
+        - name: flask-app-container
+          image: ayushbhatnagar/python-docker
+          ports:
+            - name: flask-port
+              containerPort: 5000
