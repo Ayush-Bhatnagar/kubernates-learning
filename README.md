@@ -1,5 +1,5 @@
-# kubernates-demo
-Repo for learning kubernates. Lets see in action
+# kubernetes-demo
+Repo for learning kubernetes. Lets see in action
 
 # Creating a pod using kubectl
 kubectl create -f pod.yaml
